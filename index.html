@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EletroShop - Seu e-commerce de eletrônicos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>EletroShop</h1>
+    <nav>
+      <ul>
+        <li><a href="#produtos">Produtos</a></li>
+        <li><a href="#carrinho">Carrinho</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="produtos">
+      <h2>Produtos</h2>
+      <div class="produto" data-id="1" data-nome="Notebook Gamer" data-preco="4500">
+        <img src="notebook.jpg" alt="Notebook Gamer">
+        <h3>Notebook Gamer</h3>
+        <p>R$ 4500</p>
+        <button class="btn-add">Adicionar ao Carrinho</button>
+      </div>
+      <div class="produto" data-id="2" data-nome="Smartphone X" data-preco="2500">
+        <img src="smartphone.jpg" alt="Smartphone X">
+        <h3>Smartphone X</h3>
+        <p>R$ 2500</p>
+        <button class="btn-add">Adicionar ao Carrinho</button>
+      </div>
+      <!-- Adicione mais produtos aqui -->
+    </section>
+    <section id="carrinho">
+      <h2>Carrinho</h2>
+      <ul class="carrinho-lista"></ul>
+      <p>Total: R$ <span class="total">0</span></p>
+      <button class="btn-finalizar">Finalizar Compra</button>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
